@@ -1,7 +1,16 @@
 #!/bin/bash
 
-# The bash script to setup working environment on ubuntu for teracy's python projects
-# To use this bash script:
+# The bash script to setup working environment on ubuntu for teracy's python projects.
+#
+# 
+#####################__Commands to run this bash script__################################
+#
+#    cd ~/Downloads
+#    wget https://raw.github.com/teracy-official/dev/master/scripts/setup_working_env.sh
+#    chmod +x setup_working_env.sh
+#   ./setup_working_env.sh
+#
+#########################################################################################
 
 function command_exists() {
   type "$1" &> /dev/null;
