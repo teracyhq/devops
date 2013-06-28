@@ -6,10 +6,10 @@
 # 
 #####################__Commands to run this bash script__################################
 #
-#    cd ~/Downloads
-#    wget https://raw.github.com/teracy-official/dev/master/scripts/setup_working_env.sh
-#    chmod +x setup_working_env.sh
-#   ./setup_working_env.sh
+#    $ cd ~/Downloads
+#    $ wget https://raw.github.com/teracy-official/dev/master/scripts/setup_working_env.sh
+#    $ chmod +x setup_working_env.sh
+#    $ ./setup_working_env.sh
 #
 #########################################################################################
 
