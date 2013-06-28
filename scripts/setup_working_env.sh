@@ -71,7 +71,6 @@ function setup_workspace_directory() {
 function setup_git() {
   echo "setting up git..."
   sudo apt-get install git
-  echo "You need to enable git auto complete as describled here: http://ten.ynottony.net/2009/02/enabling-bashgit-auto-completion-in-ubuntu/"
 }
 
 
@@ -99,7 +98,6 @@ function setup_virtualenv() {
 }
 
 function generate_ssh_key {
-  echo "generating ssh key..."
   if [ -f ~/.ssh/id_rsa.pub -o -f ~/.ssh/id_dsa.pub ]; then
     echo "You already have ssh key generated on the system."
   else
@@ -114,6 +112,7 @@ function verify_setup() {
   # verify if the setup is good
   # TODO
   echo "The development working environment setup is successful. Enjoy hacking!"
+  echo "You need to enable git auto complete as describled here: http://ten.ynottony.net/2009/02/enabling-bashgit-auto-completion-in-ubuntu/"
 }
 
 verify_system
