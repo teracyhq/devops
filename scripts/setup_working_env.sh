@@ -69,19 +69,28 @@ function setup_workspace_directory() {
 }
 
 function setup_git() {
-  echo "setting up git..."
-  sudo apt-get install git
+  if command_exists git ; then
+    echo "git is already installed."
+  else
+    echo "setting up git..."
+    sudo apt-get install git
+  fi
 }
 
 
 function install_setuptools() {
+  #TODO check if it's already available
   echo "installing setuptools..."
   wget https://bitbucket.org/pypa/setuptools/raw/0.7.4/ez_setup.py -O - | sudo python
 }
 
 function install_pip() {
-  echo "installing pip..."
-  wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py -O - | sudo python
+  if command_exists pip ; then
+    echo "pip is already installed."
+  else
+    echo "installing pip..."
+    wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py -O - | sudo python
+  fi
 }
 
 
