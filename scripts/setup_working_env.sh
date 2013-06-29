@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# The bash script to setup working environment on ubuntu for teracy's python projects.
+# The bash script to setup working environment on ubuntu for teracy's python projects:
 #
-# TODO: make this script run on mac osx
+# TODO: make this script setup working environment on mac osx
 # 
 #####################__Commands to run this bash script__################################
 #
