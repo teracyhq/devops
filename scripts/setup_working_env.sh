@@ -117,6 +117,24 @@ function generate_ssh_key {
   fi
 }
 
+# See http://goshawknest.wordpress.com/2011/02/16/how-to-install-psycopg2-under-virtualenv/
+# psycopg2 is required for developing teracy's projects.
+function install_python_dev() {
+  echo "installing python development packages..."
+  sudo apt-get install libpq-dev python-dev  
+}
+
+# Install addion tools like vim
+function install_tools() {
+
+  if command_exists vim ; then
+    echo "vim is already installed."
+  else
+    echo "installing additional tools..."
+    sudo apt-get instal vim
+  fi
+}
+
 function verify_setup() {
   # verify if the setup is good
   # TODO
@@ -128,7 +146,10 @@ verify_system
 update_system
 setup_workspace_directory
 setup_git
+install_python_dev
 setup_virtualenv
 generate_ssh_key
+install_tools
 verify_setup
+
 

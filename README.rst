@@ -1,35 +1,16 @@
-=========================
-teracy's develoment stuff
-=========================
+==========================
+teracy's development space
+==========================
 
-Setup working environment on ubuntu
------------------------------------
+-----------
+Get started
+-----------
 
-1. It's recommended to install Ubuntu 12.04 as it's currently the mass development environment of other our interested open source projects.
+1. `Setup working environment <https://github.com/teracy-official/dev/blob/master/docs/setup_working_env.rst>`_ 
 
-2. The bash script below will:
+2. `Start develop a Python application <https://github.com/teracy-official/dev/blob/master/docs/start_develop.rst>`_ 
 
-- setup workspace directory: ``$HOME/workspace/$USER``, ``$HOME/workspace/teracy``, ``$HOME/workspace/readonly``.
+3. `Coding conventions <https://github.com/teracy-official/dev/blob/master/docs/coding_conventions.rst>`_
 
-    In which:
-
-    ``teracy`` directory should contain teracy's projects from official github or bitbucket repository (usually read and pull request only).
-
-    ``$USER`` directory should contain your full control projects (your cloned projects, your own projects)
-
-    ``readonly`` directory should contain projects that you have read only access permission (usually offical opensource projects)
-
-
-- install ``git``
-
-- install ``setuptools``, ``pip``, ``virtualenv``, ``virtualenvwrapper``
-
-- generate ssh key if not yet generated
-
-3. Run the following commands to download the bash script to setup working environment:
-::
-    $ cd ~/Downloads
-    $ wget https://raw.github.com/teracy-official/dev/master/scripts/setup_working_env.sh
-    $ chmod +x setup_working_env.sh
-    $ ./setup_working_env.sh
+4. `IDE <https://github.com/teracy-official/dev/blob/master/docs/ide.rst>`_
 
