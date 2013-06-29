@@ -60,6 +60,8 @@ function verify_system() {
 function update_system() {
   echo "updating the system..."
   sudo apt-get update
+  # TODO Do we need upgrade?
+  # sudo apt-get upgrade 
 }
 
 function setup_workspace_directory() {
