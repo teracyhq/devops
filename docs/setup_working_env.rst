@@ -34,3 +34,8 @@ Setup working environment on Ubuntu
     $ wget https://raw.github.com/teracy-official/dev/master/scripts/setup_working_env.sh
     $ chmod +x setup_working_env.sh
     $ ./setup_working_env.sh
+
+
+------------------------------------
+Setup working environment on Mac OSX
+------------------------------------
