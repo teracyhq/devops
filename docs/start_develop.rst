@@ -1,8 +1,8 @@
-=====================================
-How to start develop a Python project
-=====================================
+=========================================
+How to start develop a Django application
+=========================================
 
-To develop a python project, https://github.com/teracy-official/teracy project template should be your starting point. Follow these instruction steps below to start a sample project named ``teracy-sample``.
+To develop a Django application, https://github.com/teracy-official/teracy project template should be your starting point. Follow these instruction steps below to start a sample project named ``teracy-sample``.
 
 1. Create a python virtual environment
 ::
