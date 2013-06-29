@@ -139,7 +139,7 @@ function verify_setup() {
   # verify if the setup is good
   # TODO
   echo "The development working environment setup is successful. Enjoy hacking!"
-  echo "You need to enable git auto complete as describled here: http://ten.ynottony.net/2009/02/enabling-bashgit-auto-completion-in-ubuntu/"
+  echo "You need to enable git auto complete as described here: http://ten.ynottony.net/2009/02/enabling-bashgit-auto-completion-in-ubuntu/"
 }
 
 verify_system
