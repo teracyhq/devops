@@ -7,9 +7,9 @@ Note that this could take a little long time for the first time of setup, you sh
 Setup working environment on Ubuntu
 -----------------------------------
 
-1. It's recommended to install Ubuntu 12.04 as it's currently the mass development environment of other our interested open source projects.
+1. It's recommended to install Ubuntu 12.04 as it's currently the mass development environment of our interested open source projects that we will work on it.
 
-2. The bash script below will:
+2. To start develop Python applications, you need to:
 
 - setup workspace directory: ``$HOME/workspace/$USER``, ``$HOME/workspace/teracy``, ``$HOME/workspace/readonly``.
 
@@ -24,11 +24,15 @@ Setup working environment on Ubuntu
 
 - install ``git``
 
+- install Python development packages: ``libpq-dev``, ``python-dev``
+
 - install ``setuptools``, ``pip``, ``virtualenv``, ``virtualenvwrapper``
+
+- install additional tools such as ``vim``, etc.
 
 - generate ssh key if not yet generated
 
-3. Run the following commands to download the bash script to setup working environment:
+3. To make it easy, a bash script is provided to do all the things above. Run the following commands to download the bash script to setup working environment:
 ::
     $ cd ~/Downloads
     $ wget https://raw.github.com/teracy-official/dev/master/scripts/setup_working_env.sh
