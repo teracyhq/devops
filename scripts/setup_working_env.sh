@@ -2,7 +2,11 @@
 
 # The bash script to setup working environment on ubuntu for teracy's python projects:
 #
-# TODO: make this script setup working environment on mac osx
+# Keep in mind that developers could use this script run many times to update any neccessary setup.
+#
+# TODO:
+#   + better installed package detection, avoid manual setup. 
+#   + make this script setup working environment on mac osx
 # 
 #####################__Commands to run this bash script__################################
 #
@@ -103,7 +107,7 @@ function setup_virtualenv() {
   sudo pip install virtualenv
   sudo pip install virtualenvwrapper
   export PROJECT_HOME=$HOME/workspace/$USER
-  source /usr/local/bin/virtualenvwrapper.sh #TODO check if this should be appended to ~/.bash
+  source /usr/local/bin/virtualenvwrapper.sh
 }
 
 function generate_ssh_key {
@@ -139,7 +143,9 @@ function verify_setup() {
   # verify if the setup is good
   # TODO
   echo "The development working environment setup is successful. Enjoy hacking!"
-  echo "You need to enable git auto complete as described here: http://ten.ynottony.net/2009/02/enabling-bashgit-auto-completion-in-ubuntu/"
+  echo "The remaining things you need to do manually:"
+  echo "Add `source /usr/local/bin/virtualenvwrapper.sh` to ~/.bashrc if not yet."
+  echo "Enable git auto complete as described here: http://ten.ynottony.net/2009/02/enabling-bashgit-auto-completion-in-ubuntu/ if not yet."
 }
 
 verify_system
