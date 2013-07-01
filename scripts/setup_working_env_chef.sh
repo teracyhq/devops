@@ -13,7 +13,7 @@ function command_exists() {
 
 if ! command_exists lsb_release ; then
     echo "You're not on Ubuntu. This script is currently provided to run under Ubuntu only."
-    #exit
+    exit
 fi
 
 is_32_bit=true
