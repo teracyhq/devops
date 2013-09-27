@@ -1,0 +1,21 @@
+branches:
+  only:
+  - master #Configure your automatic build only on a target project branch when there is a push
+  - develop
+language: python
+install: pip install -r docs/requirements.txt # change this to the right project path
+before_script:
+- git config --global user.name "Teracy Bot" # Configure your git user.name here
+- git config --global user.email "teracy.com@gmail.com" # Configure your git user.email here
+- export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
+- . ./.travis/setup.sh # make any change needed for setup.sh
+- echo $DEPLOY_HTML_DIR
+- cd docs # change this to your right project path
+- make setup_gh_pages
+script: make generate
+after_script: make deploy
+env:
+  global:
+  - GH_REPO="teracy-official/devops" #change this to your right project
+  # configure the right travis-ci secure key, see sphinx-deployment/README for more details
+  - secure: oXqQKxiZVSABza3OMDye66vHC+Y835eY+WQ+1Z9WCgr06EjFlu8UvhIXXNMq9WLDgzBhYolFS0orFoNbvrkpOQGeBwVdi2RAdidVAaI/ShEhkg+hvz3/bgVpDUL+oyTs7hR3JLDXAfcgQCqx/XXv9NHN8CPa8iB/VMBy3c4233E=
